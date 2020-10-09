@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
 
-        <title>Sharp Minor</title>
+        <title>Scribbbe</title>
       </Head>
       <Layout>
         <Component {...pageProps} />
