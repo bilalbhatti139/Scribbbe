@@ -8,9 +8,6 @@ import Layout from "../components/layout";
 
 import "../styles/global.css";
 
-// import react phone package css
-import "react-phone-input-2/lib/style.css";
-
 function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
