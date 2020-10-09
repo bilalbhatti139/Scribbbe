@@ -11,8 +11,12 @@ import Container from "react-bootstrap/Container";
 const Layout = ({ children }) => {
   return (
     <Fragment>
+      <div className="headerContainer">
+        <Container fluid>
+          <Header />
+        </Container>
+      </div>
       <Container>
-        <Header />
         {children}
         <Footer />
       </Container>
