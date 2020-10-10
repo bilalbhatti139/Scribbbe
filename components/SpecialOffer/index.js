@@ -6,8 +6,8 @@ const SpecialOffer = () => {
       <div className="special-offer-container">
         <div className="title">
           <p>
-            <img src="../../../static/assets/images/badge.png" width="16" />{" "}
-            Very... VERY Special Offer <span>Until 15th september 2020.</span>
+            <img src="../../../static/assets/images/badge.svg" /> Very... VERY
+            Special Offer <span>Until 15th september 2020.</span>
           </p>
         </div>
         <div className="details">

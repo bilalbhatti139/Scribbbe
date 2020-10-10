@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Navbar expand="lg">
       <Navbar.Brand href="#home">
-        <img src="../../static/assets/images/logo.png" alt="logo" />
+        <img src="../../static/assets/images/logo.svg" alt="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -18,11 +18,7 @@ const Header = () => {
             Buy Credits
           </Nav.Link>
           <Nav.Link href="#" className="nav-items">
-            <img
-              src="../../static/assets/images/user.png"
-              alt="user"
-              width="15"
-            />{" "}
+            <img src="../../static/assets/images/user.svg" alt="user" />{" "}
             Joachimgllt@gmail.com
           </Nav.Link>
         </Nav>
