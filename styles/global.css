@@ -118,3 +118,9 @@ s.special-offer-container .details p {
   text-align: center;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  .purchaseBoxContainer {
+    grid-template-columns: 1fr;
+  }
+}
