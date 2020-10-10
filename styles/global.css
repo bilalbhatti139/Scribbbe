@@ -34,19 +34,19 @@ a {
 }
 
 .special-offer-container p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .special-offer-container span {
   color: #e4e4e4;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
 }
 
-s.special-offer-container .details p {
+.special-offer-container .details p {
   color: #e4e4e4;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -55,7 +55,7 @@ s.special-offer-container .details p {
   border: 1px solid #fff;
   color: #fff;
   padding: 8px 20px;
-  font-size: 12px;
+  font-size: 18px;
   outline: none;
   border-radius: 4px;
   font-weight: 600;
@@ -63,4 +63,72 @@ s.special-offer-container .details p {
 
 .special-offer-container .learn-more-btn {
   text-align: right;
+}
+
+.purchaseBoxContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  grid-gap: 50px;
+}
+
+.purchaseBox {
+  background: #ffffff;
+  box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 40px 20px;
+}
+
+.purchaseBox .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchaseBox .time p {
+  color: #5a73f9;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.discountPrice span {
+  font-size: 14px;
+  color: #888888;
+  text-decoration: line-through;
+}
+
+.discountPrice p {
+  color: #30242a;
+}
+
+.purchase {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.purchase button {
+  background: transparent;
+  border: 1px solid #1f161e;
+  padding: 5px 25px;
+  outline: none;
+  border-radius: 4px;
+  width: 85%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.purchase button:hover {
+  background: #1f161e;
+  color: #ffffff;
+}
+
+.curve {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .purchaseBoxContainer {
+    grid-template-columns: 1fr;
+  }
 }
