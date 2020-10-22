@@ -142,8 +142,9 @@ a {
   outline: none;
   box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  padding: 20px;
+  padding: 30px;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .add-files-btn-container button:hover {
@@ -158,6 +159,8 @@ a {
 .add-files-btn-container span {
   color: #d7d7d7;
   font-size: 13px;
+  font-weight: normal;
+  padding-left: 10px;
 }
 
 .transcript-container {
@@ -165,4 +168,97 @@ a {
   justify-content: center;
   min-height: 100vh;
   align-items: center;
+}
+
+.add-file-container {
+  box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.upload-document {
+  border: 1px solid #797979;
+  background: #fff;
+  border-radius: 50px;
+  padding: 20px;
+  outline: none !important;
+}
+
+.upload-document span {
+  font-size: 13px;
+  color: #797979;
+}
+
+.files-list {
+  margin-top: 30px;
+}
+
+.files-list .file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.file p {
+  color: #797979;
+  margin: 0;
+  font-size: 14px;
+}
+
+.transcript-btn {
+  background: #4756df;
+  color: #fff;
+  border: 1px solid #4756df;
+  outline: none;
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: inset -3px -4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.transcript-btn:hover {
+  background: #ffffff;
+  color: #4756df;
+}
+
+.scale-in-top {
+  -webkit-animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    opacity: 1;
+  }
 }
