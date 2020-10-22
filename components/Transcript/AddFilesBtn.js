@@ -2,10 +2,16 @@ import React, { Fragment } from "react";
 
 // import components
 
-const AddFilesBtn = ({ showTranscript }) => {
+const AddFilesBtn = ({ showTranscript, hideAddFileBtn }) => {
   return (
     <Fragment>
-      <button onClick={showTranscript}>Add files</button>
+      {hideAddFileBtn && (
+        <div className="add-files-btn-container">
+          <button onClick={showTranscript}>
+            Add files <span>Supported formats: mp3, flac, wav</span>
+          </button>
+        </div>
+      )}
     </Fragment>
   );
 };

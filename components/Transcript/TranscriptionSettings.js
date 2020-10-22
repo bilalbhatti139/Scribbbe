@@ -6,7 +6,7 @@ const TranscriptionSettings = ({ hideTranscriptionSettings, Close }) => {
   return (
     <Fragment>
       {hideTranscriptionSettings && (
-        <div className="mt-5">
+        <div>
           <div onClick={Close}>x</div>
           <h1>I am component three</h1>
           <button>Confirm</button>

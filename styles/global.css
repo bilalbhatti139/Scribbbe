@@ -132,3 +132,37 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Transcript Styles */
+
+.add-files-btn-container button {
+  background: #4756df;
+  color: #fff;
+  border: 1px solid #4756df;
+  outline: none;
+  box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.add-files-btn-container button:hover {
+  background: #ffffff;
+  color: #4756df;
+}
+
+.add-files-btn-container button:hover span {
+  color: #4756df;
+}
+
+.add-files-btn-container span {
+  color: #d7d7d7;
+  font-size: 13px;
+}
+
+.transcript-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}

@@ -6,33 +6,40 @@ import AddFiles from "./AddFiles";
 import TranscriptionSettings from "./TranscriptionSettings";
 
 const TranscriptContainer = () => {
-  const [hideAddFilesBtn, setHideFilesBtn] = useState(false);
+  const [hideAddFileBtn, setHideFileBtn] = useState(true);
+  const [hideAddFiles, setHideFiles] = useState(false);
   const [hideTranscriptionSettings, setTranscriptionSettings] = useState(false);
 
   const showTranscript = () => {
-    setHideFilesBtn(true);
+    setHideFileBtn(false);
+    setHideFiles(true);
     setTranscriptionSettings(false);
   };
   const showTranscriptionSettings = () => {
     setTranscriptionSettings(true);
-    setHideFilesBtn(false);
+    setHideFiles(false);
   };
   const Close = () => {
     setTranscriptionSettings(false);
-    setHideFilesBtn(true);
+    setHideFiles(true);
   };
 
   return (
     <Fragment>
-      <AddFilesBtn showTranscript={showTranscript} />
-      <AddFiles
-        hideAddFilesBtn={hideAddFilesBtn}
-        showTranscriptionSettings={showTranscriptionSettings}
-      />
-      <TranscriptionSettings
-        hideTranscriptionSettings={hideTranscriptionSettings}
-        Close={Close}
-      />
+      <div className="transcript-container">
+        <AddFilesBtn
+          showTranscript={showTranscript}
+          hideAddFileBtn={hideAddFileBtn}
+        />
+        <AddFiles
+          hideAddFilesBtn={hideAddFiles}
+          showTranscriptionSettings={showTranscriptionSettings}
+        />
+        <TranscriptionSettings
+          hideTranscriptionSettings={hideTranscriptionSettings}
+          Close={Close}
+        />
+      </div>
     </Fragment>
   );
 };
