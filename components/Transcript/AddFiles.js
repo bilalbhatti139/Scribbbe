@@ -8,6 +8,11 @@ const AddFilesBtn = ({ hideAddFilesBtn, showTranscriptionSettings }) => {
       {hideAddFilesBtn && (
         <div className="add-file-container fade-in-fwd">
           <button className="upload-document">
+            <img
+              src="../../static/assets/images/addition-dark.svg"
+              alt="add-btn"
+              className="img-fluid pr-3"
+            />
             Add files <span>Supported formats: mp3, flac, wav</span>
           </button>
           <div className="files-list">
