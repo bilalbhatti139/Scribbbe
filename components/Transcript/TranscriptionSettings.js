@@ -6,7 +6,7 @@ const TranscriptionSettings = ({ hideTranscriptionSettings, Close }) => {
   return (
     <Fragment>
       {hideTranscriptionSettings && (
-        <div className="add-file-container scale-in-top">
+        <div className="add-file-container slide-in-bottom">
           <div onClick={Close}>x</div>
           <h1>I am component three</h1>
           <button>Confirm</button>

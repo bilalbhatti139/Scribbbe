@@ -6,7 +6,7 @@ const AddFilesBtn = ({ hideAddFilesBtn, showTranscriptionSettings }) => {
   return (
     <Fragment>
       {hideAddFilesBtn && (
-        <div className="add-file-container scale-in-top">
+        <div className="add-file-container fade-in-fwd">
           <button className="upload-document">
             Add files <span>Supported formats: mp3, flac, wav</span>
           </button>
