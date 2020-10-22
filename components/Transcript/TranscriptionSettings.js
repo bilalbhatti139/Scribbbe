@@ -16,7 +16,7 @@ const TranscriptionSettings = ({ hideTranscriptionSettings, Close }) => {
               className="close-btn"
             />
           </div>
-          <div className="title">
+          <div className="transcription-title">
             <p>Transcription settings</p>
           </div>
           <div className="language-select">
