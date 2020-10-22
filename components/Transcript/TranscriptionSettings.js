@@ -13,6 +13,7 @@ const TranscriptionSettings = ({ hideTranscriptionSettings, Close }) => {
               src="../../static/assets/images/close.svg"
               alt="add-btn"
               className="img-fluid"
+              className="close-btn"
             />
           </div>
           <div className="title">
@@ -34,7 +35,7 @@ const TranscriptionSettings = ({ hideTranscriptionSettings, Close }) => {
               <input type="checkbox" />
               <span className="slider round"></span>
             </label>
-            <p>Speakers Identification</p>
+            <p>Speakers Identification Beta</p>
           </div>
           <div className="toggle-content">
             <label className="switch mr-3">

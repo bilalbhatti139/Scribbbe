@@ -203,6 +203,10 @@ a {
   font-size: 14px;
 }
 
+.file img {
+  cursor: pointer;
+}
+
 .transcript-btn {
   background: #4756df;
   color: #fff;
@@ -230,6 +234,10 @@ a {
 .toggle-content p {
   color: #4f4f4f;
   font-size: 14px;
+}
+
+.close-btn {
+  cursor: pointer;
 }
 
 /* Animations */
