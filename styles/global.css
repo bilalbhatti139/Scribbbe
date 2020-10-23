@@ -178,7 +178,6 @@ a {
 .transcription-container {
   box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  padding: 20px 40px;
   max-width: 500px;
   margin: 100px auto;
   width: 100%;
@@ -192,6 +191,7 @@ a {
   padding: 20px 25px;
   outline: none !important;
   transition: all 0.35s ease-in-out;
+  font-weight: 500;
 }
 
 .upload-document:hover {
@@ -201,6 +201,7 @@ a {
 .upload-document span {
   font-size: 13px;
   color: #797979;
+  font-weight: 400;
 }
 
 .files-list {
@@ -231,13 +232,24 @@ a {
 }
 
 .transcription-title {
-  padding: 20px 0px;
+  padding-bottom: 13px;
+}
+
+.transcription-content {
+  padding-top: 0px;
+  padding-right: 70px;
+  padding-left: 70px;
+  padding-bottom: 50px;
 }
 
 .transcription-title p {
   font-size: 18px;
   color: #30242a;
   font-weight: 500;
+}
+
+.language-select {
+  width: 90%;
 }
 
 .transcript-btn {
@@ -252,6 +264,8 @@ a {
   width: 100%;
   margin-top: 50px;
   transition: all 0.35s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .transcript-btn:hover,
@@ -269,8 +283,10 @@ a {
   box-shadow: inset -3px -4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   transition: all 0.35s ease-in-out;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .toggle-content {
@@ -282,10 +298,18 @@ a {
 .toggle-content p {
   color: #4f4f4f;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.toggle-content span {
+  color: #797979;
+  font-family: inherit;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .close-btn {
   cursor: pointer;
+  padding: 20px;
 }
 
 /* Animations */
