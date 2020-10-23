@@ -179,6 +179,11 @@ a {
   border-radius: 50px;
   padding: 10px;
   outline: none !important;
+  transition: all 0.35s ease-in-out;
+}
+
+.upload-document:hover {
+  transform: scale(1.1);
 }
 
 .upload-document span {
