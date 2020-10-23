@@ -170,14 +170,22 @@ a {
   box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   padding: 20px 40px;
-  width: 450px;
+  width: 500px;
+}
+
+.transcription-container {
+  box-shadow: 0px 3px 34px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 20px 40px;
+  width: 500px;
+  background: #fbfbfb;
 }
 
 .upload-document {
   border: 1px solid #797979;
   background: #fff;
   border-radius: 50px;
-  padding: 10px;
+  padding: 20px 25px;
   outline: none !important;
   transition: all 0.35s ease-in-out;
 }
@@ -193,6 +201,12 @@ a {
 
 .files-list {
   margin-top: 40px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.files-list::-webkit-scrollbar {
+  display: none;
 }
 
 .files-list .file {
@@ -218,6 +232,7 @@ a {
 
 .transcription-title p {
   font-size: 18px;
+  color: #30242a;
 }
 
 .transcript-btn {
@@ -230,17 +245,33 @@ a {
   box-shadow: inset -3px -4px 8px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
   transition: all 0.35s ease-in-out;
 }
 
-.transcript-btn:hover {
+.transcript-btn:hover,
+.confirm-btn:hover {
   transform: scale(1.1);
+}
+
+.confirm-btn {
+  background: #4756df;
+  color: #fff;
+  border: 1px solid #4756df;
+  outline: none;
+  padding: 20px;
+  font-size: 18px;
+  box-shadow: inset -3px -4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 50px;
+  transition: all 0.35s ease-in-out;
 }
 
 .toggle-content {
   display: flex;
   align-items: baseline;
+  padding-top: 20px;
 }
 
 .toggle-content p {

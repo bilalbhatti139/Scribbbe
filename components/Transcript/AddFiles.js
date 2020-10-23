@@ -6,44 +6,88 @@ const AddFilesBtn = ({ hideAddFilesBtn, showTranscriptionSettings }) => {
   return (
     <Fragment>
       {hideAddFilesBtn && (
-        <div className="add-file-container fade-in-fwd">
-          <button className="upload-document">
-            <img
-              src="../../static/assets/images/addition-dark.svg"
-              alt="add-btn"
-              className="img-fluid pr-3"
-            />
-            Add files <span>Supported formats: mp3, flac, wav</span>
-          </button>
-          <div className="files-list">
-            <div className="file">
-              <p>AntoineFaitDeLaTrompette.mp3</p>
+        <div className="add-file-container">
+          <div className="fade-in-fwd">
+            <button className="upload-document">
               <img
-                src="../../static/assets/images/delete.svg"
-                className="img-fluid"
+                src="../../static/assets/images/addition-dark.svg"
+                alt="add-btn"
+                className="img-fluid pr-3"
               />
+              Add files <span>Supported formats: mp3, flac, wav</span>
+            </button>
+            <div className="files-list">
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>{" "}
+              <div className="file">
+                <p>AntoineFaitDeLaTrompette.mp3</p>
+                <img
+                  src="../../static/assets/images/delete.svg"
+                  className="img-fluid"
+                />
+              </div>
             </div>
-            <div className="file">
-              <p>AntoineFaitDeLaTrompette.mp3</p>
-              <img
-                src="../../static/assets/images/delete.svg"
-                className="img-fluid"
-              />
-            </div>
-            <div className="file">
-              <p>AntoineFaitDeLaTrompette.mp3</p>
-              <img
-                src="../../static/assets/images/delete.svg"
-                className="img-fluid"
-              />
-            </div>
+            <button
+              className="transcript-btn"
+              onClick={showTranscriptionSettings}
+            >
+              Transcript
+            </button>
           </div>
-          <button
-            className="transcript-btn"
-            onClick={showTranscriptionSettings}
-          >
-            Transcript
-          </button>
         </div>
       )}
     </Fragment>
